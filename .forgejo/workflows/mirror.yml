@@ -1,21 +1,41 @@
 name: Mirror to GitHub
 on:
   push:
-    branches: ["**"]
-    tags: ["v*"]
+    branches: [main]
 
 jobs:
   mirror:
-    runs-on: ubuntu-latest
+    runs-on: docker
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Mirror to GitHub
+
+      - name: Inject mirror marker (read-only notice)
         run: |
-          git remote add github https://x-access-token:${GITHUB_MIRROR_TOKEN}@github.com/elementeer/elementeer-docs.git
-          for ref in $(git for-each-ref --format='%(refname:short)' refs/heads/ refs/tags/ | grep -v '^gh-pages$'); do
-            git push github "${ref}" --force
-          done
+          target="elementeer-docs"
+          cat > _MIRROR_IS_READONLY.md << EOF
+          # This is a mirror — read only
+
+          **Source of Truth:** [git.langevc.com](https://git.langevc.com/elementeer/${target})
+
+          This repository is automatically mirrored from the official Elementeer Forgejo instance.
+          Pull requests, issues, and contributions are **not accepted here**.
+
+          → [Open an issue](https://git.langevc.com/elementeer/${target}/issues)
+          → [Read the docs](https://docs.elementeer.xyz)
+          EOF
+
+      - name: Remove GitHub-specific config
+        run: rm -rf .github 2>/dev/null || true
+
+      - name: Push to GitHub (public mirror)
         env:
-          GITHUB_MIRROR_TOKEN: ${{ secrets.GITHUB_MIRROR_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_MIRROR_TOKEN }}
+        run: |
+          target="elementeer-docs"
+          git add -f _MIRROR_IS_READONLY.md
+          git add -u .github 2>/dev/null || true
+          git -c user.name="Elementeer Mirror" -c user.email="mirror@elementeer.langevc.com" commit -m "mirror: mark as read-only, remove .github (auto-generated)" --allow-empty || true
+          git remote add github-mirror https://x-access-token:${GH_TOKEN}@github.com/elementeer/${target}.git
+          git push github-mirror main --tags --force
