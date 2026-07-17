@@ -1,0 +1,129 @@
+/* Elementeer Brand Colors — Material for MkDocs */
+/* See: https://v0-elementeer.vercel.app/ */
+
+/* ===== Primary = Connect Violet #6A35FF ===== */
+:root {
+  --md-primary-fg-color: #6A35FF;
+  --md-primary-fg-color--light: #A85CFF;
+  --md-primary-fg-color--dark: #5726F2;
+  --md-primary-bg-color: #FFFFFF;
+  --md-primary-bg-color--light: #F7F2FF;
+}
+
+/* Dark scheme overrides */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #7B4FFF;
+  --md-primary-fg-color--light: #A85CFF;
+  --md-primary-fg-color--dark: #6A35FF;
+
+  --md-default-bg-color: #141722;
+  --md-default-bg-color--light: #1E2330;
+  --md-default-bg-color--lighter: #2A3040;
+  --md-default-bg-color--lightest: #363D50;
+  --md-default-fg-color: #EEF2F8;
+  --md-default-fg-color--light: #DCE2EC;
+  --md-default-fg-color--lighter: #A8B0C4;
+  --md-default-fg-color--lightest: #7F87A0;
+
+  --md-typeset-color: #EEF2F8;
+  --md-typeset-a-color: #A85CFF;
+
+  --md-code-bg-color: #1E2330;
+  --md-code-fg-color: #EEF2F8;
+
+  --md-admonition-bg-color: #1E2330;
+  --md-admonition-fg-color: #EEF2F8;
+
+  --md-footer-bg-color: #0E1220;
+  --md-footer-bg-color--dark: #0B0E1A;
+
+  --md-accent-fg-color: #2F5BFF;
+}
+
+/* Light scheme overrides */
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #FFFFFF;
+  --md-default-fg-color: #141722;
+  --md-default-fg-color--light: #4D5670;
+  --md-default-fg-color--lighter: #7F87A0;
+  --md-default-fg-color--lightest: #A8B0C4;
+
+  --md-typeset-a-color: #6A35FF;
+
+  --md-code-bg-color: #F7F2FF;
+  --md-code-fg-color: #20263A;
+
+  --md-footer-bg-color: #141722;
+  --md-footer-bg-color--dark: #0E1220;
+
+  --md-accent-fg-color: #2F5BFF;
+}
+
+/* ===== Accent = Operational Indigo #2F5BFF ===== */
+[data-md-color-scheme="slate"] {
+  --md-accent-fg-color: #7FA3FF;
+  --md-accent-fg-color--transparent: rgba(127, 163, 255, 0.1);
+}
+[data-md-color-scheme="default"] {
+  --md-accent-fg-color: #2F5BFF;
+  --md-accent-fg-color--transparent: rgba(47, 91, 255, 0.1);
+}
+
+/* ===== Code highlighting ===== */
+[data-md-color-scheme="slate"] {
+  --md-code-hl-number-color: #A85CFF;
+  --md-code-hl-special-color: #2F5BFF;
+  --md-code-hl-function-color: #7FA3FF;
+  --md-code-hl-constant-color: #E600B8;
+  --md-code-hl-keyword-color: #A85CFF;
+  --md-code-hl-string-color: #1FBF75;
+  --md-code-hl-name-color: #DCE2EC;
+  --md-code-hl-operator-color: #F5A524;
+  --md-code-hl-punctuation-color: #7F87A0;
+  --md-code-hl-comment-color: #7F87A0;
+  --md-code-hl-generic-color: #EEF2F8;
+  --md-code-hl-variable-color: #EEF2F8;
+}
+[data-md-color-scheme="default"] {
+  --md-code-hl-number-color: #6A35FF;
+  --md-code-hl-special-color: #2F5BFF;
+  --md-code-hl-function-color: #2F5BFF;
+  --md-code-hl-constant-color: #E600B8;
+  --md-code-hl-keyword-color: #6A35FF;
+  --md-code-hl-string-color: #0E9F6E;
+  --md-code-hl-name-color: #20263A;
+  --md-code-hl-operator-color: #F59E0B;
+  --md-code-hl-punctuation-color: #7F87A0;
+  --md-code-hl-comment-color: #7F87A0;
+  --md-code-hl-generic-color: #20263A;
+  --md-code-hl-variable-color: #20263A;
+}
+
+/* ===== Admonitions ===== */
+:root {
+  --md-admonition-icon--info: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 9h-2V7h2m0 10h-2v-6h2m-1-9A10 10 0 002 12a10 10 0 0010 10 10 10 0 0010-10A10 10 0 0012 2z" fill="%236A35FF"/></svg>');
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition,
+[data-md-color-scheme="slate"] .md-typeset details {
+  border-color: rgba(106, 53, 255, 0.3);
+}
+[data-md-color-scheme="default"] .md-typeset .admonition,
+[data-md-color-scheme="default"] .md-typeset details {
+  border-color: #E9D8FF;
+}
+
+/* ===== Mermaid diagrams ===== */
+[data-md-color-scheme="slate"] .mermaid .node rect,
+[data-md-color-scheme="slate"] .mermaid .node circle,
+[data-md-color-scheme="slate"] .mermaid .node ellipse,
+[data-md-color-scheme="slate"] .mermaid .node polygon {
+  fill: #1E2330 !important;
+  stroke: #6A35FF !important;
+}
+[data-md-color-scheme="slate"] .mermaid .edgePath .path {
+  stroke: #A8B0C4 !important;
+}
+[data-md-color-scheme="slate"] .mermaid .label {
+  color: #EEF2F8 !important;
+}

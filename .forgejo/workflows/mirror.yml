@@ -1,0 +1,21 @@
+name: Mirror to GitHub
+on:
+  push:
+    branches: ["**"]
+    tags: ["v*"]
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Mirror to GitHub
+        run: |
+          git remote add github https://x-access-token:${GITHUB_MIRROR_TOKEN}@github.com/elementeer/elementeer-docs.git
+          for ref in $(git for-each-ref --format='%(refname:short)' refs/heads/ refs/tags/ | grep -v '^gh-pages$'); do
+            git push github "${ref}" --force
+          done
+        env:
+          GITHUB_MIRROR_TOKEN: ${{ secrets.GITHUB_MIRROR_TOKEN }}

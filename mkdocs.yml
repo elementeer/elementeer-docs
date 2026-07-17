@@ -1,0 +1,149 @@
+site_name: Elementeer
+site_description: The agent-native Elementor growth layer — connect, automate, and scale Elementor sites with AI agents
+site_author: elementeer.xyz
+site_url: https://docs.elementeer.xyz
+repo_url: https://github.com/elementeer/elementeer-mcp
+repo_name: elementeer/elementeer-mcp
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  logo: assets/elementeer-logo-white.svg
+  favicon: assets/favicon.svg
+  palette:
+    - media: "(prefers-color-scheme)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+
+extra_css:
+  - assets/brand-colors.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+
+  - Install:
+    - Install Elementeer: install/index.md
+    - WordPress Plugin: install/plugin.md
+    - MCP Server: install/mcp.md
+    - CLI Setup: install/cli.md
+    - Troubleshooting: install/troubleshooting.md
+
+  - Use Elementeer:
+    - Overview: use/index.md
+    - Quickstart: use/quickstart.md
+    - Core Concepts:
+      - Architecture Overview: use/concepts-architecture.md
+      - API Keys & Capabilities: use/concepts-api-keys.md
+      - Governance Model: use/concepts-governance.md
+      - Product Tiers: use/concepts-tiers.md
+    - Feature Guides:
+      - Template Library: use/guides/templates.md
+      - Site Assessment: use/guides/assessment.md
+      - Brand Setup Wizard: use/guides/brand-setup.md
+      - Creator Mode: use/guides/creator-mode.md
+      - Theme Builder: use/guides/theme-builder.md
+      - Navigation Menus: use/guides/menus.md
+      - Media Management: use/guides/media.md
+      - SEO Operations: use/guides/seo.md
+      - Performance: use/guides/performance.md
+      - Global Styles: use/guides/global-styles.md
+    - Integrations:
+      - WooCommerce: use/integrations/woocommerce.md
+      - Voxel Marketplace: use/integrations/voxel.md
+      - Booking Systems: use/integrations/booking.md
+      - LMS Platforms: use/integrations/lms.md
+      - Charity Plugins: use/integrations/charity.md
+      - Accessibility: use/integrations/accessibility.md
+      - Translation: use/integrations/translation.md
+    - Agent Reference:
+      - Claude Code: use/agents/claude.md
+      - Cursor: use/agents/cursor.md
+      - OpenCode: use/agents/opencode.md
+      - Antigravity: use/agents/antigravity.md
+      - Codex CLI: use/agents/codex.md
+    - Troubleshooting: use/troubleshooting.md
+
+  - Publish & Extend:
+    - Overview: publish/index.md
+    - Build an Addon: publish/addon-development.md
+    - Register Capabilities: publish/capabilities.md
+    - Addon Catalog: publish/addon-catalog.md
+    - Bridge API: publish/bridge-api.md
+    - Roadmap: publish/roadmap.md
+
+  - Why Elementeer:
+    - Vision: why/vision.md
+    - Agent-Native WordPress: why/agent-native.md
+    - Elementor Ecosystem: why/elementor-ecosystem.md
+    - Open-Core Model: why/open-core.md
+    - Freemium Philosophy: why/freemium.md
+    - Comparison: why/comparison.md
+
+  - Integrations:
+    - MCP Tools: integrations/mcp-tools.md
+    - REST API: integrations/rest-api.md
+    - CI/CD: integrations/cicd.md
+    - Docker: integrations/docker.md
+    - Capacium Registry: integrations/capacium.md
+
+  - Legal:
+    - Privacy: legal/privacy.md
+    - Terms: legal/terms.md
+    - License: legal/license.md
+    - Data Processing: legal/dpa.md
+
+  - Reference:
+    - REST API Reference: reference/api.md
+    - MCP Tool Reference: reference/mcp-tools.md
+    - Capability Registry: reference/capabilities.md
+    - Glossary: reference/glossary.md
+
+  - Contribute: contribute.md
+  - Changelog: changelog.md
