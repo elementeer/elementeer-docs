@@ -1,6 +1,7 @@
-{#-
-  This file was automatically generated - do not edit
--#}
+{# Override: logo image only, no site_name text #}
 {% if config.theme.logo %}
   <img src="{{ config.theme.logo | url }}" alt="logo">
+{% endif %}
+{% if config.site_name and not config.theme.logo %}
+  <span class="md-ellipsis">{{ config.site_name }}</span>
 {% endif %}

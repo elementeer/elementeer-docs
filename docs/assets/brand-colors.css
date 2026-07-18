@@ -2,7 +2,7 @@
 /* See: https://v0-elementeer.vercel.app/ */
 
 /* Hide site name next to logo (only the first .md-header__topic, not the page title) */
-.md-header__topic:first-child .md-ellipsis { display: none; }
+/* header site_name hidden via template override */
 
 /* ===== Primary = Connect Violet #6A35FF ===== */
 :root {
