@@ -9,7 +9,7 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   logo: assets/logo.svg
-  favicon: assets/favicon.ico
+  favicon: assets/favicon.png
   palette:
     - media: "(prefers-color-scheme)"
       scheme: slate
