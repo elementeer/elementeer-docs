@@ -5,10 +5,10 @@ site_url: https://docs.elementeer.xyz
 repo_url: https://github.com/elementeer/elementeer
 repo_name: elementeer
 edit_uri: edit/main/docs/
-custom_dir: overrides
 
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/logo.svg
   favicon: assets/favicon.png
   palette:
