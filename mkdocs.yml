@@ -1,4 +1,4 @@
-site_name: Elementeer
+site_name: ""
 site_description: The agent-native Elementor growth layer — connect, automate, and scale Elementor sites with AI agents
 site_author: elementeer.xyz
 site_url: https://docs.elementeer.xyz
@@ -8,7 +8,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
-  custom_dir: overrides
+
   logo: assets/logo.svg
   favicon: assets/favicon.png
   palette:
