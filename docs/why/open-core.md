@@ -84,8 +84,8 @@ The Studio tier â€” multi-site orchestration, control plane, and policy engine â
 | Component | License | Repository |
 |-----------|---------|------------|
 | MCP Server (`@elementeer/mcp`) | Apache 2.0 | [github.com/elementeer/elementeer-mcp](https://github.com/elementeer/elementeer-mcp) |
-| WordPress Plugin (core) | GPL 2.0 | [git.langevc.com/elementeer/elementeer-plugin](https://git.langevc.com/elementeer/elementeer-plugin) |
+| WordPress Plugin (core) | GPL 2.0 | [github.com/elementeer/elementeer](https://github.com/elementeer/elementeer) |
 | @elementeer/pro addon | Proprietary | Download from elementeer.xyz |
 | Documentation | CC BY 4.0 | This site |
 
-See the [License](../../legal/license.md) page for full legal text and details.
+See the [License](../legal/license.md) page for full legal text and details.

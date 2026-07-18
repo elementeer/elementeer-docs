@@ -1,6 +1,9 @@
 /* Elementeer Brand Colors — Material for MkDocs */
 /* See: https://v0-elementeer.vercel.app/ */
 
+/* Hide empty site name next to logo */
+.md-header__topic:first-child { display: none; }
+
 /* ===== Primary = Connect Violet #6A35FF ===== */
 :root {
   --md-primary-fg-color: #6A35FF;

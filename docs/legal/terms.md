@@ -1,7 +1,5 @@
 # Terms of Service
 
-*This is a placeholder terms of service. Replace with your actual terms before publishing.*
-
 ## Acceptance of Terms
 
 By installing or using Elementeer, you agree to these terms. If you disagree, do not install or use the software.

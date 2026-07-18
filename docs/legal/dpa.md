@@ -1,7 +1,5 @@
 # Data Processing Agreement (DPA)
 
-*This is a placeholder Data Processing Agreement. Replace with your actual DPA before publishing, especially if you offer the Advanced tier with AI translation and image generation features.*
-
 ## Scope
 
 This Data Processing Agreement applies to the processing of personal data through Elementeer's services, specifically:

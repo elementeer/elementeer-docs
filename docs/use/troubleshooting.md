@@ -136,5 +136,5 @@ This outputs detailed request/response traces including full HTTP headers, tool 
 
 If issues persist:
 - Check [GitHub Issues](https://github.com/elementeer/elementeer-mcp/issues) for known problems
-- Review the [Installation Troubleshooting](../../install/troubleshooting.md) for plugin and server issues
+- Review the [Installation Troubleshooting](../install/troubleshooting.md) for plugin and server issues
 - Ensure you're running the latest plugin and MCP server versions

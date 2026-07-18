@@ -155,4 +155,4 @@ const UpdateGlobalColorsSchema = z.object({
 
 This catches type errors before the API call is made — the agent never sends invalid color codes to WordPress.
 
-See the full [MCP Tool Reference](../../reference/mcp-tools.md) for complete schemas, or [REST API Reference](rest-api.md) for the underlying WordPress endpoints.
+See the full [MCP Tool Reference](../reference/mcp-tools.md) for complete schemas, or [REST API Reference](rest-api.md) for the underlying WordPress endpoints.

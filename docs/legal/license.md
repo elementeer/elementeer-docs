@@ -6,7 +6,7 @@ Elementeer's components are licensed under different terms, reflecting their rol
 
 **GNU General Public License v2.0 (GPL-2.0)**
 
-The core WordPress plugin is licensed under GPL-2.0, consistent with WordPress's own license. This applies to all code in the `elementeer-plugin` repository at [git.langevc.com/elementeer/elementeer-plugin](https://git.langevc.com/elementeer/elementeer-plugin).
+The core WordPress plugin is licensed under GPL-2.0, consistent with WordPress's own license. This applies to all code in the elementeer repository at [github.com/elementeer/elementeer](https://github.com/elementeer/elementeer).
 
 GPL-2.0 grants you the right to:
 
@@ -91,6 +91,6 @@ Component licenses are included in their respective distribution files and repos
 | Component | License | Source Available |
 |-----------|---------|-----------------|
 | MCP Server (`@elementeer/mcp`) | Apache-2.0 | Yes — [GitHub](https://github.com/elementeer/elementeer-mcp) |
-| WordPress Plugin (core) | GPL-2.0 | Yes — [git.langevc.com](https://git.langevc.com/elementeer/elementeer-plugin) |
+| WordPress Plugin (core) | GPL-2.0 | Yes — [GitHub](https://github.com/elementeer/elementeer) |
 | @elementeer/pro | Proprietary | No |
 | Documentation | CC BY 4.0 | Yes — This site |

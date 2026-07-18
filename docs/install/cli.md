@@ -86,7 +86,7 @@ Elementeer CLI is designed for pipeline use. Example GitHub Actions step:
     ELEMENTEER_API_KEY: ${{ secrets.ELEMENTEER_KEY }}
 ```
 
-See [CI/CD Setup](../../integrations/cicd.md) for full pipeline examples.
+See [CI/CD Setup](../integrations/cicd.md) for full pipeline examples.
 
 ## Shell Completion
 

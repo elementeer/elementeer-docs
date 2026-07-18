@@ -1,6 +1,6 @@
 # REST API Reference
 
-Complete reference for the Elementeer REST API (`/wp-json/elementeer/v1/`). For conceptual information and usage patterns, see the [REST API guide](../../integrations/rest-api.md).
+Complete reference for the Elementeer REST API (`/wp-json/elementeer/v1/`). For conceptual information and usage patterns, see the [REST API guide](../integrations/rest-api.md).
 
 ## Authentication
 

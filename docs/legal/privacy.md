@@ -1,7 +1,5 @@
 # Privacy Policy
 
-*This is a placeholder privacy policy. Replace with your actual privacy policy before publishing.*
-
 ## Data Collection
 
 Elementeer does not collect, store, or transmit data from your WordPress site to external servers. All operations occur within your infrastructure — the MCP server runs on your machine, and the WordPress plugin runs on your server.

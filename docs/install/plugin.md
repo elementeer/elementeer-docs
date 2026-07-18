@@ -22,7 +22,7 @@ wget https://github.com/elementeer/elementeer-mcp/releases/latest/download/eleme
 For development or if you prefer to build from source, clone the repository directly:
 
 ```bash
-git clone https://git.langevc.com/elementeer/elementeer-plugin.git /wp-content/plugins/elementeer
+git clone https://github.com/elementeer/elementeer.git /wp-content/plugins/elementeer
 cd /wp-content/plugins/elementeer
 composer install
 ```

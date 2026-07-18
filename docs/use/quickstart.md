@@ -8,7 +8,7 @@ Download the latest `elementeer-plugin.zip` from [GitHub Releases](https://githu
 
 ```bash
 # Or install from source
-git clone https://git.langevc.com/elementeer/elementeer-plugin.git wp-content/plugins/elementeer
+git clone https://github.com/elementeer/elementeer.git wp-content/plugins/elementeer
 ```
 
 ### Verify Installation

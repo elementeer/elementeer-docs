@@ -51,5 +51,5 @@ Elementeer WordPress Plugin
 
 - **License:** Elementeer MCP server is Apache-2.0. The WordPress plugin is GPL-2.0. Addons can use any compatible license.
 - **Repository:** [github.com/elementeer/elementeer-mcp](https://github.com/elementeer/elementeer-mcp)
-- **Plugin Source:** [git.langevc.com/elementeer/elementeer-plugin](https://git.langevc.com/elementeer/elementeer-plugin)
+- **Plugin Source:** [github.com/elementeer/elementeer](https://github.com/elementeer/elementeer)
 - **Issues:** [GitHub Issues](https://github.com/elementeer/elementeer-mcp/issues)

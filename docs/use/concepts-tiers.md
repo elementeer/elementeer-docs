@@ -113,4 +113,4 @@ The Studio tier is on the roadmap for future releases and will include:
 
 The Advanced tier is activated by installing the `@elementeer/pro` addon plugin on your WordPress site. No changes to your MCP server configuration are needed — the server automatically discovers Pro capabilities when it connects to a site with the Pro addon active.
 
-Studio tier licensing and availability will be announced on the [Elementeer roadmap](../../publish/roadmap.md).
+Studio tier licensing and availability will be announced on the [Elementeer roadmap](../publish/roadmap.md).

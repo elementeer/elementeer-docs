@@ -6,7 +6,7 @@ Elementeer is open-core — the MCP server (Apache-2.0) and WordPress plugin (GP
 
 ### Code Contributions
 
-The [Elementeer MCP server](https://github.com/elementeer/elementeer-mcp) and [WordPress plugin](https://git.langevc.com/elementeer/elementeer-plugin) are open to contributions:
+The [Elementeer MCP server](https://github.com/elementeer/elementeer-mcp) and [WordPress plugin](https://github.com/elementeer/elementeer) are open to contributions:
 
 - **Bug fixes** — found an issue? PRs are welcome
 - **New integrations** — add detection and tooling for Elementor-compatible plugins
@@ -24,7 +24,7 @@ This documentation site lives in the [elementeer-docs repository](https://github
 
 ### Addon Development
 
-Build and publish your own Elementeer addons. The addon system is fully documented — see [Addon Development](../publish/addon-development.md) for the API. Submit your addon for catalog inclusion by opening an issue.
+Build and publish your own Elementeer addons. The addon system is fully documented — see [Addon Development](publish/addon-development.md) for the API. Submit your addon for catalog inclusion by opening an issue.
 
 ### Testing & Feedback
 
@@ -52,7 +52,7 @@ The server runs in development mode with hot reload.
 ### WordPress Plugin (PHP)
 
 ```bash
-git clone https://git.langevc.com/elementeer/elementeer-plugin.git
+git clone https://github.com/elementeer/elementeer.git
 cd elementeer-plugin
 composer install
 ```
@@ -107,7 +107,7 @@ By contributing, you agree that your contributions will be licensed under the sa
 - **WordPress Plugin:** GPL-2.0
 - **Documentation:** CC BY 4.0
 
-See [License](../legal/license.md) for full license texts.
+See [License](legal/license.md) for full license texts.
 
 ## Community
 
