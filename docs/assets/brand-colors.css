@@ -131,10 +131,13 @@
   color: #EEF2F8 !important;
 }
 
-/* ===== Logo per mode ===== */
+/* ===== Logo per mode =====
+   NOTE: url() in CSS resolves relative to THIS file (served at
+   /assets/brand-colors.css), not to the page. Prefixing "assets/" here would
+   resolve to /assets/assets/... (404) and the logo silently disappears. */
 [data-md-color-scheme="slate"] .md-logo img {
-  content: url(assets/elementeer-logo-white.svg);
+  content: url(elementeer-logo-white.svg);
 }
 [data-md-color-scheme="default"] .md-logo img {
-  content: url(assets/logo.svg);
+  content: url(logo.svg);
 }
