@@ -6,12 +6,12 @@ Elementeer is a layered system that connects AI agents to Elementor-powered Word
 
 ```mermaid
 graph TD
-    A[AI Agent<br/>Claude / Cursor / OpenCode] -->|MCP Protocol<br/>stdio transport| B[MCP Server<br/>Node.js / TypeScript]
-    B -->|Zod Schema<br/>Validation| C[JSON-RPC Layer]
-    C -->|Authenticated<br/>REST API| D[WordPress Plugin<br/>PHP 8.0+]
-    D -->|Elementor API| E[Elementor<br/>Widgets / Templates / Kits]
-    D -->|WordPress API| F[WordPress Core<br/>Posts / Pages / Media]
-    D -->|Plugin APIs| G[Integrations<br/>WooCommerce / Voxel / LMS]
+    A[AI Agent<br>Claude / Cursor / OpenCode] -->|MCP Protocol<br>stdio transport| B[MCP Server<br>Node.js / TypeScript]
+    B -->|Zod Schema<br>Validation| C[JSON-RPC Layer]
+    C -->|Authenticated<br>REST API| D[WordPress Plugin<br>PHP 8.0+]
+    D -->|Elementor API| E[Elementor<br>Widgets / Templates / Kits]
+    D -->|WordPress API| F[WordPress Core<br>Posts / Pages / Media]
+    D -->|Plugin APIs| G[Integrations<br>WooCommerce / Voxel / LMS]
 ```
 
 ### Layer 1: AI Agent

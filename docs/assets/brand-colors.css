@@ -130,3 +130,11 @@
 [data-md-color-scheme="slate"] .mermaid .label {
   color: #EEF2F8 !important;
 }
+
+/* ===== Logo per mode ===== */
+[data-md-color-scheme="slate"] .md-logo img {
+  content: url(assets/elementeer-logo-white.svg);
+}
+[data-md-color-scheme="default"] .md-logo img {
+  content: url(assets/logo.svg);
+}

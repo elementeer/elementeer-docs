@@ -81,10 +81,10 @@ Elementeer is Apache-2.0 licensed and fully extensible. Build addons, register c
 
 ```mermaid
 graph LR
-    A[AI Agent<br/>Claude / Cursor / OpenCode] -->|MCP Protocol| B[Elementeer MCP Server<br/>Node.js / TypeScript]
-    B -->|REST API + API Key| C[WordPress Plugin<br/>PHP 8.0+]
-    C -->|Elementor API| D[Elementor<br/>+ Addons]
-    C -->|WordPress API| E[WordPress Core<br/>Plugins & Themes]
+    A[AI Agent<br>Claude / Cursor / OpenCode] -->|MCP Protocol| B[Elementeer MCP Server<br>Node.js / TypeScript]
+    B -->|REST API + API Key| C[WordPress Plugin<br>PHP 8.0+]
+    C -->|Elementor API| D[Elementor<br>+ Addons]
+    C -->|WordPress API| E[WordPress Core<br>Plugins & Themes]
 ```
 
 1. **Install** the WordPress plugin on your site and the MCP server on your machine.
