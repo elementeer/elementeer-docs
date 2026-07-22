@@ -36,7 +36,7 @@ theme:
     - search.highlight
 
 extra_css:
-  - assets/brand-colors.css
+  - assets/brand.css
 
 markdown_extensions:
   - admonition
