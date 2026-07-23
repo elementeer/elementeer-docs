@@ -1,92 +1,130 @@
-/* Elementeer Brand Colors — Material for MkDocs */
-/* See: https://v0-elementeer.vercel.app/ */
+/* Elementeer Brand Colors — Material for MkDocs
+ *
+ * Token values are taken verbatim from the brand system at
+ * https://v0-elementeer.vercel.app/ (light + dark read off the live page), so both
+ * schemes match the reference rather than being approximated.
+ *
+ * Key point: in Material, --md-primary-fg-color is the HEADER BACKGROUND, not the
+ * brand colour. Setting it to violet paints the whole header bar violet, which the
+ * reference does not do — there the header carries the page/card background with a
+ * hairline border, and violet appears only as an accent.
+ *
+ * The site title is intentionally NOT hidden via CSS; mkdocs.yml carries
+ * site_name: "" so the header shows the logo alone while page titles keep working.
+ */
 
-/* Hide site name next to logo (only the first .md-header__topic, not the page title) */
-/* Header: site_name via empty string in config */
-
-/* ===== Primary = Connect Violet #6A35FF ===== */
+/* ===== Brand palette (reference: --ef-*) ===== */
 :root {
-  --md-primary-fg-color: #6A35FF;
-  --md-primary-fg-color--light: #A85CFF;
-  --md-primary-fg-color--dark: #5726F2;
-  --md-primary-bg-color: #FFFFFF;
-  --md-primary-bg-color--light: #F7F2FF;
+  --ef-violet: #6A35FF;
+  --ef-violet-hover: #5726F2;
+  --ef-indigo: #2F5BFF;
+  --ef-bridge: #A85CFF;
+  --ef-magenta: #E600B8;
+  --ef-soft: #E9D8FF;
+  --ef-surface-soft: #F7F2FF;
+  --ef-graphite: #141722;
+  --ef-slate-900: #20263A;
+  --ef-slate-700: #4D5670;
+  --ef-slate-500: #7F87A0;
+  --ef-slate-200: #DCE2EC;
+  --ef-slate-100: #EEF2F8;
+  --ef-success: #1FBF75;
+  --ef-warning: #F5A524;
+  --ef-error: #E5484D;
 }
 
-/* Dark scheme overrides */
-[data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #7B4FFF;
-  --md-primary-fg-color--light: #A85CFF;
-  --md-primary-fg-color--dark: #6A35FF;
-
-  --md-default-bg-color: #141722;
-  --md-default-bg-color--light: #1E2330;
-  --md-default-bg-color--lighter: #2A3040;
-  --md-default-bg-color--lightest: #363D50;
-  --md-default-fg-color: #EEF2F8;
-  --md-default-fg-color--light: #DCE2EC;
-  --md-default-fg-color--lighter: #A8B0C4;
-  --md-default-fg-color--lightest: #7F87A0;
-
-  --md-typeset-color: #EEF2F8;
-  --md-typeset-a-color: #A85CFF;
-
-  --md-code-bg-color: #1E2330;
-  --md-code-fg-color: #EEF2F8;
-
-  --md-admonition-bg-color: #1E2330;
-  --md-admonition-fg-color: #EEF2F8;
-
-  --md-footer-bg-color: #0E1220;
-  --md-footer-bg-color--dark: #0B0E1A;
-
-  --md-accent-fg-color: #2F5BFF;
-}
-
-/* Light scheme overrides */
+/* ===== Light scheme ===== */
 [data-md-color-scheme="default"] {
+  /* Header/tabs surface — white, like the reference (NOT violet) */
+  --md-primary-fg-color: #FFFFFF;
+  --md-primary-fg-color--light: #FAFBFC;
+  --md-primary-fg-color--dark: #EEF2F8;
+  /* Content sitting on that surface: logo, title, icons, toggle */
+  --md-primary-bg-color: #141722;
+  --md-primary-bg-color--light: #4D5670;
+
   --md-default-bg-color: #FFFFFF;
   --md-default-fg-color: #141722;
   --md-default-fg-color--light: #4D5670;
   --md-default-fg-color--lighter: #7F87A0;
-  --md-default-fg-color--lightest: #A8B0C4;
+  --md-default-fg-color--lightest: #DCE2EC;
 
+  --md-typeset-color: #141722;
   --md-typeset-a-color: #6A35FF;
+
+  --md-accent-fg-color: #6A35FF;
+  --md-accent-fg-color--transparent: rgba(106, 53, 255, 0.1);
 
   --md-code-bg-color: #F7F2FF;
   --md-code-fg-color: #20263A;
 
+  --md-admonition-bg-color: #FAFBFC;
+  --md-admonition-fg-color: #141722;
+
   --md-footer-bg-color: #141722;
-  --md-footer-bg-color--dark: #0E1220;
-
-  --md-accent-fg-color: #2F5BFF;
+  --md-footer-bg-color--dark: #0E1017;
 }
 
-/* ===== Accent = Operational Indigo #2F5BFF ===== */
+/* ===== Dark scheme ===== */
 [data-md-color-scheme="slate"] {
-  --md-accent-fg-color: #7FA3FF;
-  --md-accent-fg-color--transparent: rgba(127, 163, 255, 0.1);
+  /* Header uses the reference's card colour, page uses the darker background */
+  --md-primary-fg-color: #171B26;
+  --md-primary-fg-color--light: #1C2130;
+  --md-primary-fg-color--dark: #0E1017;
+  --md-primary-bg-color: #F4F6FB;
+  --md-primary-bg-color--light: #B4BCD0;
+
+  --md-default-bg-color: #0E1017;
+  --md-default-bg-color--light: #171B26;
+  --md-default-bg-color--lighter: #1C2130;
+  --md-default-bg-color--lightest: #20263A;
+  --md-default-fg-color: #F4F6FB;
+  --md-default-fg-color--light: #B4BCD0;
+  --md-default-fg-color--lighter: #8A93AC;
+  --md-default-fg-color--lightest: #2A3042;
+
+  --md-typeset-color: #F4F6FB;
+  --md-typeset-a-color: #8B5CFF;
+
+  --md-accent-fg-color: #8B5CFF;
+  --md-accent-fg-color--transparent: rgba(139, 92, 255, 0.12);
+
+  --md-code-bg-color: #1C2130;
+  --md-code-fg-color: #F4F6FB;
+
+  --md-admonition-bg-color: #171B26;
+  --md-admonition-fg-color: #F4F6FB;
+
+  --md-footer-bg-color: #0B0D13;
+  --md-footer-bg-color--dark: #08090E;
 }
-[data-md-color-scheme="default"] {
-  --md-accent-fg-color: #2F5BFF;
-  --md-accent-fg-color--transparent: rgba(47, 91, 255, 0.1);
+
+/* ===== Header: hairline border instead of Material's drop shadow ===== */
+.md-header {
+  box-shadow: none;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+.md-tabs {
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* Search field needs its own surface now that the header is not a strong colour */
+.md-search__form {
+  background-color: var(--md-default-bg-color--lightest, #EEF2F8);
+}
+.md-search__form:hover {
+  background-color: var(--md-accent-fg-color--transparent);
+}
+[data-md-color-scheme="slate"] .md-search__form {
+  background-color: #20263A;
+}
+.md-search__input,
+.md-search__input::placeholder,
+.md-search__icon {
+  color: var(--md-primary-bg-color--light);
 }
 
 /* ===== Code highlighting ===== */
-[data-md-color-scheme="slate"] {
-  --md-code-hl-number-color: #A85CFF;
-  --md-code-hl-special-color: #2F5BFF;
-  --md-code-hl-function-color: #7FA3FF;
-  --md-code-hl-constant-color: #E600B8;
-  --md-code-hl-keyword-color: #A85CFF;
-  --md-code-hl-string-color: #1FBF75;
-  --md-code-hl-name-color: #DCE2EC;
-  --md-code-hl-operator-color: #F5A524;
-  --md-code-hl-punctuation-color: #7F87A0;
-  --md-code-hl-comment-color: #7F87A0;
-  --md-code-hl-generic-color: #EEF2F8;
-  --md-code-hl-variable-color: #EEF2F8;
-}
 [data-md-color-scheme="default"] {
   --md-code-hl-number-color: #6A35FF;
   --md-code-hl-special-color: #2F5BFF;
@@ -101,19 +139,47 @@
   --md-code-hl-generic-color: #20263A;
   --md-code-hl-variable-color: #20263A;
 }
+[data-md-color-scheme="slate"] {
+  --md-code-hl-number-color: #A85CFF;
+  --md-code-hl-special-color: #2F5BFF;
+  --md-code-hl-function-color: #8B5CFF;
+  --md-code-hl-constant-color: #E600B8;
+  --md-code-hl-keyword-color: #A85CFF;
+  --md-code-hl-string-color: #1FBF75;
+  --md-code-hl-name-color: #DCE2EC;
+  --md-code-hl-operator-color: #F5A524;
+  --md-code-hl-punctuation-color: #8A93AC;
+  --md-code-hl-comment-color: #8A93AC;
+  --md-code-hl-generic-color: #F4F6FB;
+  --md-code-hl-variable-color: #F4F6FB;
+}
 
 /* ===== Admonitions ===== */
 :root {
   --md-admonition-icon--info: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 9h-2V7h2m0 10h-2v-6h2m-1-9A10 10 0 002 12a10 10 0 0010 10 10 10 0 0010-10A10 10 0 0012 2z" fill="%236A35FF"/></svg>');
 }
-
-[data-md-color-scheme="slate"] .md-typeset .admonition,
-[data-md-color-scheme="slate"] .md-typeset details {
-  border-color: rgba(106, 53, 255, 0.3);
-}
 [data-md-color-scheme="default"] .md-typeset .admonition,
 [data-md-color-scheme="default"] .md-typeset details {
   border-color: #E9D8FF;
+}
+[data-md-color-scheme="slate"] .md-typeset .admonition,
+[data-md-color-scheme="slate"] .md-typeset details {
+  border-color: #3A2A6B;
+}
+
+/* ===== Tables ===== */
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) {
+  background-color: #171B26;
+  border-color: #2A3042;
+}
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background-color: #1C2130;
+}
+[data-md-color-scheme="default"] .md-typeset table:not([class]) {
+  border-color: #DCE2EC;
+}
+[data-md-color-scheme="default"] .md-typeset table:not([class]) th {
+  background-color: #FAFBFC;
 }
 
 /* ===== Mermaid diagrams ===== */
@@ -121,23 +187,30 @@
 [data-md-color-scheme="slate"] .mermaid .node circle,
 [data-md-color-scheme="slate"] .mermaid .node ellipse,
 [data-md-color-scheme="slate"] .mermaid .node polygon {
-  fill: #1E2330 !important;
-  stroke: #6A35FF !important;
+  fill: #1C2130 !important;
+  stroke: #8B5CFF !important;
 }
 [data-md-color-scheme="slate"] .mermaid .edgePath .path {
-  stroke: #A8B0C4 !important;
+  stroke: #8A93AC !important;
 }
 [data-md-color-scheme="slate"] .mermaid .label {
-  color: #EEF2F8 !important;
+  color: #F4F6FB !important;
 }
 
 /* ===== Logo per mode =====
-   NOTE: url() in CSS resolves relative to THIS file (served at
-   /assets/brand-colors.css), not to the page. Prefixing "assets/" here would
-   resolve to /assets/assets/... (404) and the logo silently disappears. */
+   Both variants are the same artwork (viewBox 0 0 1270.57 192.15, 10 paths); only
+   the wordmark fill differs, mirroring the reference's "Full Logo": graphite on
+   light surfaces, white on dark. The violet symbol is identical in both.
+
+   logo.svg carries a WHITE wordmark, so on the light header it was invisible and
+   only the violet symbol showed — that was the "logo missing in light mode" bug.
+
+   url() resolves relative to THIS file (served at /assets/brand.css), not to the
+   page. An "assets/" prefix would resolve to /assets/assets/... (404) and the logo
+   silently disappears — which is exactly what happened on internal.elementeer.xyz. */
 [data-md-color-scheme="slate"] .md-logo img {
-  content: url(elementeer-logo-white.svg);
+  content: url(logo.svg);
 }
 [data-md-color-scheme="default"] .md-logo img {
-  content: url(logo.svg);
+  content: url(elementeer-logo-dark.svg);
 }
