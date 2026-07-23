@@ -197,6 +197,34 @@
   color: #F4F6FB !important;
 }
 
+/* ===== Buttons =====
+   Material derives .md-button colours from --md-primary-fg-color, which now carries
+   the header surface (white / dark) rather than the brand colour. Left alone, a
+   secondary button renders white-on-white in light mode and disappears entirely,
+   and the primary button loses its fill. Pin both to the accent colour. */
+.md-typeset .md-button {
+  color: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+}
+.md-typeset .md-button:hover,
+.md-typeset .md-button:focus {
+  background-color: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+  color: #FFFFFF;
+}
+.md-typeset .md-button--primary {
+  background-color: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+  color: #FFFFFF;
+}
+.md-typeset .md-button--primary:hover,
+.md-typeset .md-button--primary:focus {
+  background-color: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+  color: #FFFFFF;
+  opacity: .88;
+}
+
 /* ===== Logo per mode =====
    Official brand assets, not derived: elementeer.svg for light surfaces and
    elementeer_invers.svg for dark ones. Same artwork and viewBox; they differ only
