@@ -198,19 +198,23 @@
 }
 
 /* ===== Logo per mode =====
-   Both variants are the same artwork (viewBox 0 0 1270.57 192.15, 10 paths); only
-   the wordmark fill differs, mirroring the reference's "Full Logo": graphite on
-   light surfaces, white on dark. The violet symbol is identical in both.
+   Official brand assets, not derived: elementeer.svg for light surfaces and
+   elementeer_invers.svg for dark ones. Same artwork and viewBox; they differ only
+   in class assignment — on light the wordmark is black and the circle violet with
+   a white "e"; on dark the wordmark is white. (There is also an
+   elementeer_invers_violetbg variant with a white circle and violet "e", intended
+   for logos placed ON a violet surface — not our case, the header is #171B26.)
 
-   logo.svg carries a WHITE wordmark, so on the light header it was invisible and
-   only the violet symbol showed — that was the "logo missing in light mode" bug.
+   The old logo.svg carried a WHITE wordmark, so on the light header it was
+   invisible and only the violet symbol showed — the "logo missing in light mode"
+   bug.
 
-   url() resolves relative to THIS file (served at /assets/brand.css), not to the
-   page. An "assets/" prefix would resolve to /assets/assets/... (404) and the logo
-   silently disappears — which is exactly what happened on internal.elementeer.xyz. */
+   url() resolves relative to THIS file (served at /assets/brand.css), not to the page.
+   An "assets/" prefix would resolve to /assets/assets/... (404) and the logo
+   silently disappears — exactly what happened on internal.elementeer.xyz. */
 [data-md-color-scheme="slate"] .md-logo img {
   content: url(logo.svg);
 }
 [data-md-color-scheme="default"] .md-logo img {
-  content: url(elementeer-logo-dark.svg);
+  content: url(elementeer-logo-light.svg);
 }
